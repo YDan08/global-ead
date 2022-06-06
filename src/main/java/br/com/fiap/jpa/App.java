@@ -47,10 +47,10 @@ public class App {
 		movimentoService.cadastrar(movimento3);
 				
 		System.out.println("============ Listar Movimento por Tipo ==============");
-		movimentoService.ListarPorTipo("E");
+		movimentoService.ListarPorTipo("E").forEach(System.out::println);
 		
 		System.out.println("============ Listar Visitantes por filtro ==============");
-		visitanteService.pesquisar("maria", null, null);
+		visitanteService.pesquisar("maria", null, null).forEach(System.out::println);
 		
 	}
 }
